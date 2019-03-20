@@ -1,0 +1,25 @@
+{
+  "name": "css-triangle",
+  "version": "0.1.0",
+  "author": "kimulaco",
+  "license": "MIT",
+  "main": "lib/css-triangle.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kimulaco/css-triangle.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack -w",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.4",
+    "jest": "^24.5.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.4000",
+    "typings": "^2.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

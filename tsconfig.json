@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "umd",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true
+  },
+  "files": [
+    "src/css-triangle.ts"
+  ]
+}
