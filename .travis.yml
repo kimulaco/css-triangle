@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+cache: yarn
+
+before_script:
+  - yarn install
+  - yarn add -D coveralls
+
+script:
+  - jest --coverage
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - rm -rf ./coverage
+
+notifications:
+  slack:
+    secure: FnSX0HkXK5Aikl11I8a/H/+9mMbvPj4IyDIvxt0smGz39zC7UCcvZUL/JtlDu5Hoac9065EnkBkSHsDlGQ6xlAvcRA6nQZwzTdTc2AhR3YcBAZgwduH9KK41ZFHbSkiXoBnoamuihr+3/n6iufgVUnrc1WyB7/tw5KRkzEEGwUII2GCcLD0O+G2uyTo6hdAxR4dr8Dn0NQYBy5SXZFj2Mxlx03RU0Rz7lQoogS7pUMkGnHajVVh5XDCfn3CFpxDsZJBHUq7SepB2vmchE5NlLY8hKMOLY+Fj6aCtqStLbz1dMmsrWAD3qkf5cSSZfnBoOxQPJzc9Ol/s/g1vHWyF9um3h66EQAPH1TMptW/Z+W6MDldBD5A+vAQHh63XUsZCyo3bK0TZSNZXGzT5gp0EzfNvag8pD+z5zmsdAVQ5dO6CvbKuuxgmLpyphR5DMli9uT32S7+sEWz7ZpjMdKjQ9gMf6qgpFeiuQsQGEprax//dHiv0SK4uDCSLhrRyg0COOsbbe1ONUFIkxh1a4VsjjzwB7dJ9iqarM30Hu31To9Ce23MonguVWNUbTke6j67Mq0NeYipuGn31coYiedMcSPe3TwW+Ffuqoq49nhWAUr85rz8mTtK47Sq7AT7DXn1N1IW+bvKroBEhzlayDH4pETge55yEFvFYs0k8nZr2lXc=
