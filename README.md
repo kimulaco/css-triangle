@@ -1,5 +1,9 @@
 # css-triangle
 
+[![Build Status](https://travis-ci.org/kimulaco/css-triangle.svg)](https://travis-ci.org/kimulaco/css-triangle)
+[![Coverage Status](https://coveralls.io/repos/github/kimulaco/css-triangle/badge.svg)](https://coveralls.io/github/kimulaco/css-triangle)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 ## Use
 
 1. Download to `git clone` or ZIP.
