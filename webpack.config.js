@@ -13,8 +13,8 @@ module.exports = {
     },
     resolve: {
         extensions: [
-        '.ts',
-        '.js'
+            '.ts',
+            '.js'
         ]
     },
     module: {

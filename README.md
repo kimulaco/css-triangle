@@ -29,4 +29,4 @@ const cssProperties = cssTriangle.generate({
 
 ## License
 
-[MIT](https://github.com/kimulaco/css-triangle/blob/master/LICENSE)
+[MIT License](https://github.com/kimulaco/css-triangle/blob/master/LICENSE)
