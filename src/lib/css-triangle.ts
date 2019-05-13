@@ -17,7 +17,7 @@ class CssTriangle {
     'direction': 'top'
   }
 
-  public generate (option: Option): any {
+  public generate (option: Option = {}): any {
     this.option = Object.assign(this.option, option)
 
     return {

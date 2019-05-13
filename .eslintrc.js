@@ -16,22 +16,42 @@ module.exports = {
   rules: {
     'node/no-missing-import': 'error'
   },
-  overrides: {
-    files: [
-      '**/*.ts'
-    ],
-    plugins: [
-      '@typescript-eslint'
-    ],
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      sourceType: 'umd',
-      project: './tsconfig.json'
+  overrides: [
+    {
+      files: [
+        '**/**.ts'
+      ],
+      plugins: [
+        '@typescript-eslint'
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'umd',
+        project: './tsconfig.json'
+      },
+      rules: {
+       'no-undef': 'off',
+       'no-unused-vars': 'off',
+       '@typescript-eslint/no-unused-vars': 'error',
+      }
     },
-    rules: {
-     'no-undef': 'off',
-     'no-unused-vars': 'off',
-     '@typescript-eslint/no-unused-vars': 'error',
+    {
+      files: [
+        '**/lib/**.ts'
+      ],
+      parserOptions: {
+        sourceType: 'umd',
+        project: './tsconfig.json'
+      }
+    },
+    {
+      files: [
+        '**/docs/**.ts'
+      ],
+      parserOptions: {
+        sourceType: 'module',
+        project: './tsconfig.json'
+      }
     }
-  }
+  ]
 }
