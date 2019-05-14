@@ -17,7 +17,7 @@ class Actions {
   }
 }
 
-const view: View<State> = (state, actions) => {
+const view: View<State, Actions> = (state, actions) => {
   return h('main', {}, [
     h('div', {}, JSON.stringify(state.css, null, '  '))
   ])

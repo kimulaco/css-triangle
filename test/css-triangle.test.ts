@@ -1,4 +1,4 @@
-import cssTriangle from '../src/css-triangle'
+import cssTriangle from '../src/lib/css-triangle'
 
 describe('.generate()', () => {
   describe('direction?: string', () => {

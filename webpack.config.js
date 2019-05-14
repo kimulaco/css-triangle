@@ -4,7 +4,6 @@ module.exports = [
   // Library bundles
   {
     mode: 'production',
-    target: 'node',
     entry: './src/lib/css-triangle.ts',
     output: {
       library: 'CssTriangle',
@@ -34,7 +33,7 @@ module.exports = [
 
   // Page bundles
   {
-    mode: 'development',
+    mode: 'production',
     entry: './src/docs/app.ts',
     output: {
       libraryTarget: 'var',
